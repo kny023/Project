@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+			* {margin: 0; padding: 0;}
+			div {overflow: hidden; /* background-color: rgba(139, 195, 74, 1); */  }
+
+			img {width: 100%; /* opacity: 1; */ position: absolute; top: 0; left: 0; display: none;}
+			.img01 {display: block;}
+
+			@media screen and (min-width: 900px) and (max-width: 1200px) {
+				/* img {opacity: 0.8; } */
+				.img01 {display: none;}
+				.img02 {display: block;}
+			}
+
+			@media screen and (min-width: 700px) and (max-width: 899px) {
+				/* img {opacity: 0.5; } */
+				.img02 {display: none;}
+				.img03 {display: block;}
+			}
+
+			@media screen and (min-width: 501px) and (max-width: 699px) {
+				/* img {opacity: 0.2; } */
+				.img03 {display: none;}
+				.img04 {display: block;}
+			}
+
+			@media screen and (max-width: 500px) {
+				/* img {opacity: 0; } */
+				.img04 {display: none;}
+				.img05 {display: block;}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img class="img01" src="https://freight.cargo.site/t/original/i/96404261c21d91ce9e2513415d8f078fa10895f64134ff0f8f45e2eac75fe7fa/1.jpg">
+			<img class="img02" src="https://freight.cargo.site/t/original/i/c906cff55728bd51fde47c4d60aeb7aed6dbe45181ad6595c2b2e39c701b3345/2.jpg">
+			<img class="img03" src="https://freight.cargo.site/t/original/i/2a2e1902477adae67e989638c2308a4ebacdb29f092f3d082eb1158c00572323/3.jpg">
+			<img class="img04" src="https://freight.cargo.site/t/original/i/ba7026e88f2383461f7ef261ff56215ab10b0cc97a9cf17b29ec85c7bfa2f2e5/4.jpg">
+			<img class="img05" src="https://freight.cargo.site/t/original/i/779c7bfb9a86983226cffd0ce08784ebed2984ab6ae6c0529d76545b9eca2189/5.jpg">
+		</div>
+	</body>
+</html>
