@@ -1,44 +1,63 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<style>
-			* {margin: 0; padding: 0;}
-			div {overflow: hidden; /* background-color: rgba(139, 195, 74, 1); */  }
-
-			img {width: 100%; /* opacity: 1; */ position: absolute; top: 0; left: 0; display: none;}
-			.img01 {display: block;}
-
-			@media screen and (min-width: 900px) and (max-width: 1200px) {
-				/* img {opacity: 0.8; } */
-				.img01 {display: none;}
-				.img02 {display: block;}
-			}
-
-			@media screen and (min-width: 700px) and (max-width: 899px) {
-				/* img {opacity: 0.5; } */
-				.img02 {display: none;}
-				.img03 {display: block;}
-			}
-
-			@media screen and (min-width: 501px) and (max-width: 699px) {
-				/* img {opacity: 0.2; } */
-				.img03 {display: none;}
-				.img04 {display: block;}
-			}
-
-			@media screen and (max-width: 500px) {
-				/* img {opacity: 0; } */
-				.img04 {display: none;}
-				.img05 {display: block;}
-			}
-		</style>
-	</head>
-	<body>
-		<div>
-			<img class="img01" src="https://freight.cargo.site/t/original/i/96404261c21d91ce9e2513415d8f078fa10895f64134ff0f8f45e2eac75fe7fa/1.jpg">
-			<img class="img02" src="https://freight.cargo.site/t/original/i/c906cff55728bd51fde47c4d60aeb7aed6dbe45181ad6595c2b2e39c701b3345/2.jpg">
-			<img class="img03" src="https://freight.cargo.site/t/original/i/2a2e1902477adae67e989638c2308a4ebacdb29f092f3d082eb1158c00572323/3.jpg">
-			<img class="img04" src="https://freight.cargo.site/t/original/i/ba7026e88f2383461f7ef261ff56215ab10b0cc97a9cf17b29ec85c7bfa2f2e5/4.jpg">
-			<img class="img05" src="https://freight.cargo.site/t/original/i/779c7bfb9a86983226cffd0ce08784ebed2984ab6ae6c0529d76545b9eca2189/5.jpg">
-		</div>
-	</body>
+<head>
+<style>
+/* exam클래스의 태그를 가로로 나열하는 스타일입니다. */
+div.exam {
+display: inline-block;
+/* 11개의 태그를 균등하게 나누었다.*/
+width: 9%;
+/* 높이는 100px */
+height: 100px;
+/* 테두리는 검은색 */
+border: 1px solid #000;
+float: left;
+}
+/* 선 스타일의 그라데이션 180도 즉, 위에서 아래로 은색으로 보라색으로 */
+div.exam:nth-of-type(1) {
+background: linear-gradient(180deg,silver,purple);
+}
+/* 선 스타일의 그라데이션 왼쪽 아래에서 오른쪽 위로 빨간색에서 흰색으로 바뀌면서 파란색으로 */
+div.exam:nth-of-type(2) {
+background: linear-gradient(to top right,red 0%,white 50%,blue 100%);
+}
+/* 원 스타일의 그라데이션, 중심은 노란색으로 녹색으로 */
+div.exam:nth-of-type(3) {
+background: radial-gradient(circle,yellow,green);
+}
+/* 원 스타일의 그라데이션, 좌우 50px, 위아래 50px, 원을 left 80%, top 30px에서 maroon색에서 올리브 색으로 바뀌면서 아쿠아색으로 */
+div.exam:nth-of-type(4) {
+background: radial-gradient(50px 50px at 80px 30px,maroon,olive,aqua);
+}
+/* 반복 스타일의 그라데이션, 네이비 색 20%, 틸색 80% */
+div.exam:nth-of-type(5) {
+background: repeating-linear-gradient(navy 20%,teal 80%);
+}
+/* 반복 스타일의 그라데이션, 315도(-45도) 왼쪽 위에서 오른쪽 아래로, 흰색 5px 중간색은 검은색 5px, 마지막은 검은색 10px으로 */
+div.exam:nth-of-type(6) {
+background: repeating-linear-gradient(-45deg,white, white 5px,black 5px,black 10px);
+}
+/* 반복 스타일의 그라데이션, 원 스타일, 회색에서 라임색으로*/
+div.exam:nth-of-type(7) {
+background: repeating-radial-gradient(circle closest-side,gray 0px, lime 20px);
+}
+/* 반복 스타일의 그라데이션, 원 스타일, 흰색 5px, 핑크색 5px, 마지막은 10px */
+div.exam:nth-of-type(8) {
+background: repeating-radial-gradient(circle,transparent, white 5px,fuchsia 5px,fuchsia 10px);
+}
+</style>
+</head>
+<body>
+<div class="exam"></div>
+<div class="exam"></div>
+<div class="exam"></div>
+<div class="exam"></div>
+<div class="exam"></div>
+<div class="exam"></div>
+<div class="exam"></div>
+<div class="exam"></div>
+</body>
 </html>
+
+
+출처: https://nowonbun.tistory.com/370 [명월 일지]
