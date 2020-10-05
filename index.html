@@ -2,31 +2,27 @@
 	<head>
 		<style>
 			* {margin: 0; padding: 0;}
-			div {overflow: hidden; /* background-color: rgba(139, 195, 74, 1); */  }
+			div {overflow: hidden;}
 
-			img {width: 100%; /* opacity: 1; */ position: absolute; top: 0; left: 0; display: none;}
+			img {width: 100%; position: absolute; top: 0; left: 0; display: none;}
 			.img01 {display: block;}
 
 			@media screen and (min-width: 1100px) and (max-width: 1200px) {
-				/* img {opacity: 0.8; } */
 				.img01 {display: none;}
 				.img02 {display: block;}
 			}
 
 			@media screen and (min-width: 800px) and (max-width: 1099px) {
-				/* img {opacity: 0.5; } */
 				.img02 {display: none;}
 				.img03 {display: block;}
 			}
 
 			@media screen and (min-width: 501px) and (max-width: 799px) {
-				/* img {opacity: 0.2; } */
 				.img03 {display: none;}
 				.img04 {display: block;}
 			}
 
 			@media screen and (max-width: 500px) {
-				/* img {opacity: 0; } */
 				.img04 {display: none;}
 				.img05 {display: block;}
 			}
