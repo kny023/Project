@@ -1,2 +1,2 @@
 # Project_CREATIVE KLUDGING
-creative tech class projects 
+creative tech class projects (CREATIVE KLUDGING)
